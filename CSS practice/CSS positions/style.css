@@ -1,0 +1,23 @@
+.container {
+  border: 2px solid black;
+  height: 8000px;
+  background-color: beige;
+  position: relative;
+}
+img {
+  margin: 10px;
+}
+
+.car-2 {
+  /* position: relative;
+  top: 200px; */
+  position: absolute;
+  top: 100px;
+}
+.car-4 {
+  position: fixed;
+}
+.car-3 {
+  position: sticky;
+  top: 30px;
+}
