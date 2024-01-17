@@ -1,0 +1,43 @@
+Block-level element
+- new line contain karty hain no matter content is short or long
+- width - extreme left - extreme right
+- respect your margin/padding
+-respect your height/width
+
+BOX_SIZING:BORDER BOX(Box ki overall dimension change nai hoti m/p add karny sy)
+actual box ki dimension main change nai ata sirf content effect/shrink hota ha
+box sizing karny sy 
+but if you add marhin/padding without box-sizing then it will impact the original size of your box.
+
+INLINE_ELEMENT
+-always try to adjust in same line
+-width(according to content)
+-custom height and width not accepted
+-custom margin (horizontly apply)hota ha par padding visible ha properly.
+-display:block property apply karny sy span (inline )block level ban jaye ga or block element ki tarha behave kary ga 
+-display:inline sy (block level) INLINE element ban jaye gy
+-dispay:inline-block(combination of block and inline) this property behave like INLINE but you can apply your custom height and width
+
+--------------------------------------CSS Positions------------------------------------
+1-relative position
+-window k acc ap image ya content ko move karty hain
+-space intact rehti ha us cheez ki jo move ki ha
+-properties(L,R,M,T) apply kar skty hain
+2-absolute position
+close-ancesstor ko follow karta ha 1 must parent hona chahye 
+absoulte position ap isky nearest ancesstor py base karta ha usko relative karty hain (overlap)
+3-fixed(It fixed according to the whole window)
+use to fixed the image or content while scrolling
+4-sticky - sticky works as fixed but you have to mention from where you wanna stick the content in your web page like (T,B,L,R)
+very important point:(Image/content tab tak sticky rehta ha jab tak wo apny parent container k anadar hoti hai)
+5- static(by default)
+
+-----------------------------CSS units-----------------------
+1-% it acts according to it's parent div IT depends on immediate parent k kitni width dekhai ha "10%"etc
+2-px - one px is = 1/96  oftehn inch k equal hota ha 
+2-vh and vw viewport height and viewport width
+---Relative length unit-----
+1-em(apky parent k font size py depend hoga or hamary child k content py child ka size usky parent k size k sth * ho jaye ega like parent have 10px and child have 10em to 10*10=100px size hoga em ka )
+2-rem(rem based on root element and it's by default 16px size jitni b hum rem dein gy wo 16 sy * hogi usky acc size incraese hoga)
+
+NOTE: we shouldn't use fixed size units (absolute units) because we need to make our design responsive use relative

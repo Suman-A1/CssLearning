@@ -1,0 +1,30 @@
+-------Grid container properties-------=12 columns in each row
+works from top to bottom. we've to make container-grid
+1- gap: (grid-gap: grid-row-gap ,grid-column-gap;)
+2-grd-template-columns:(Define Width of column )can defined by (fr) fraction or by % or by px or property by name is "auto"it will automatically adjust according to the available space 
+3-grid-template-rows:(Define height of your row)
+4-justify-content:(It works same as flex works on horizontally x-axis (center,space-around/between/evenly/end)
+5-align-content:  pury grid ko move kar skty hain..(Moving your elements vertically Y-AXIS)By Default strectch value so it acts according to your parent-container (center/end/space-between/around/evenly)
+6-align_items: grid k andar items (text/content) ha usko move karty hain(ek item apny box k andar move karta ha like center/end/start/etc items  
+
+-------Grid Child Properties-----------
+1-justify-self: Horizontally move parent div k anadr box(elements) move kary ga (center,start,end)
+2-align-self: justify-self k anadr box main content move kary ga!(vertically)
+3-grid-column: (shorthand grid-column: 1/3;)start from 1 and end to 3
+grid-column-start:1 /grid column-end:4 this will contain space from col 1 to col-3
+4-grid-row: same as grid-column but it works horizontally
+5-grid-area: 4 values 
+(row-start / column-start /row-end /column-end)
+grid-area: 1/1/3/3
+Note: kisi b box ko kahi sy b start or end kar skty hain baki sb accordingly move kary gy usky
+--------------grid-template-areas----------
+name define kar k layouts bana skty hain 
+grid-template-area:"nav nav nav nav"
+
+                    "side main main main"
+                     "side main main main"
+                      "ftr ftr ftr ftr"
+}
+.box-1{
+grid-area: nav;
+} // so here this will contain the space of 4 rows and one column

@@ -1,0 +1,24 @@
+1 dimensional layout used to set items horizontally(main axis(row) cross axis(column)
+1-parent container ko display -flex karty hain 
+ ------------------ container properties:------------
+1-flex-direction: row,column,row-reverse,column-reverse;
+2-flex-wrap: wrap/no-wrap/wrap-reverse (no-wrap bydefault) box shrink hoty hain us cheez ko overcome karny k lie wrap ki property use hoti ha 
+box /content khud nechy move kar jaty hain agar space available ho to
+3-flex-flow:(flex-wrap or flex-direction k combination)shorthand property like: flex-flow : wrap row/column; e.g flex-flow : flex-direction flex-wrap;(flex-flow: row wrap)
+4-justify-content: flex-center/end/start/space-between/space-around/space-evenly main axis k around
+5-align-items:(default value:stretch hoti ha) cross-axis column k according element ko align  
+(align-items:flex-start/flex-end/center column k acc top py
+6-align-content:Items ko shrink karny py jo gap ata ha row wise usko maintain karny k lie (align-content:flex-start/space-between/space-evenly/space-around/flex-end (cross-axis)
+
+-------------------children properties----------------
+1-order: bydefault order 0,order ka number jitna bara hoga wo end py pehly ata jaye ga right side py.
+2-flex-grow:item k size(box) ko grow karwana speedly jase order increase to usi size main flex-grow kary ga like flex-grow: 1,2,3etc...
+3-flex-shrink: bydefault value is 1;
+4-flex: shorthand property for (flex-shrink/grow/basis)  pattern: (flex: grow shrink dlex-basis) flex: 0 0 100px;
+5-align-self: cross-axis main kisi element ko move karna ho to flex-start/end /center 
+6-flex-basis:  (initial width of the main axis for a particular child)main axis ki direction main kisi item ki initial width mention karni ha to e.g overall box size(width) is 80px but box 1 (flex-basis:200px) to initall
+he wo box bakio ki nisbat bara hoga
+ ------------------------shorthand properties-----------------
+1---flex-flow : flex-direction and flex-wrap;
+2---flex: flex-shrink and flex-grow and flex-basis;
+3---place-content:
