@@ -9,29 +9,43 @@
   <body>
     <!-- header-section start -->
     <div class="bgimage">
-      <nav class="navbar">
-        <div class="logo">
-          <img
-            src="./images/logo removebg.png"
-            alt="Logo"
-            height="60px"
-            width="60px"
-          />
-          <h2><a href="#">Digitalux</a></h2>
-        </div>
+      <header class="navigation-header">
+        <nav>
+          <div class="logo-container">
+            <a href="./index.html">Shoppay</a>
+          </div>
+          <div class="navigation-items" id="navigation-items">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <li class="dropdown">
+              <a href="#">Services</a>
+              <div class="dropdown_contents">
+                <a href="#">App Development</a>
 
-        <div class="nav_links">
-          <a href="#">Home</a>
-          <a href="#">About us</a>
-          <a href="#">Services</a>
-          <a href="#">Contact us</a>
-        </div>
-        <div>
-          <button class="nav_button">
-            <a href="#">Signup</a>
-          </button>
-        </div>
-      </nav>
+                <a href="#" class="nested-dropdown-triger"> Web Development</a>
+                 <div class="nested-dropdown">
+                  <a href="#">Frontend Development</a>
+                  <a href="#">Backend Development</a>
+                  <a href="#">Full Stack Development</a>
+                 </div>
+                <a href="#"> UI/UX</a>
+              </div>
+               </li>
+              <a href="#">Contact us</a>
+            </li>
+          </div>
+
+          <div>
+            <button class="nav_button">
+              <a href="#">Signup</a>
+            </button>
+          </div>
+          <div class="hamburger">
+            <span id="openHam">&#9776;</span>
+            <span id="closeHam">&#x2716;</span>
+          </div>
+        </nav>
+      </header>
     </div>
     <!-- End header---- section -->
 
@@ -161,5 +175,23 @@
     <footer class="footer">All Rights Reserved &copy; 2024</footer>
 
     <!-- End Footer -->
+    <script>
+      let openHam = document.querySelector("#openHam");
+      let closeHam = document.querySelector("#closeHam");
+      let navigationItems = document.querySelector("#navigation-items");
+
+      const hamburgerEvent = (navigation, close, open) => {
+        navigationItems.style.display = navigation;
+        closeHam.style.display = close;
+        openHam.style.display = open;
+      };
+
+      openHam.addEventListener("click", () =>
+        hamburgerEvent("flex", "block", "none")
+      );
+      closeHam.addEventListener("click", () =>
+        hamburgerEvent("none", "none", "block")
+      );
+    </script>
   </body>
 </html>
