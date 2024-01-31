@@ -48,7 +48,7 @@
   margin: 40px 0px;
 }
 .gap {
-  padding: 0px 40px;
+  padding: 0px 20px;
 }
 .pt-2 {
   padding-top: 20px;
@@ -73,8 +73,64 @@
   color: white;
   padding: 20px 0px;
 }
+/*media queries manhoosss*/
+@media (min-width: 768px) and (max-width: 800px) {
+  .our-services .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-@media (max-width: 576px) {
+  .doso1 {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 20px; /* Display in 2 columns */
+  }
+  .d-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .gap {
+    padding: 40px 0px;
+  }
+  .display {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .display1 {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .image-setting1 {
+    background: url(./images/1200x600.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 100%;
+  }
+  .image-setting1 img {
+    display: none;
+  }
+
+  .image-setting2 {
+    background: url(./images/1200x600.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 100%;
+  }
+  .image-setting2 img {
+    display: none;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) { 
   .header-image {
     background: url(./images/headerImage.jpeg);
 
@@ -131,7 +187,8 @@
   .image-setting2 img {
     display: none;
   }
-}
+} */
+
 @media (min-width: 575.9px) and (max-width: 768px) {
 }
 @media (min-width: 768px) and (max-width: 991.9px) {
