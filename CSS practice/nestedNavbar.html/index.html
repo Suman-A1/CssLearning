@@ -22,27 +22,26 @@
   <body>
     <div class="container">
       <nav class="flex">
-        <div class="logo">Beachi</div>
+        <div class="logo">Infoscap</div>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li>
+
+          <!-- <li>
             <a href="#" class="dropdown-toggle"
               >Project
               <i class="fas fa-caret-down"></i>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="#">Hover Effect</a></li>
+              <li><a href="#">IOT Things</a></li>
               <li><a href="#">Game Dev</a></li>
               <li><a href="#">Mobile App</a></li>
               <li><a href="#">Andriod dev</a></li>
-              <li><a href="#">Tic Tac Toe</a></li>
-              <li><a href="#">Hotel manage</a></li>
+              <li><a href="#">Computing services</a></li>
             </ul>
-          </li>
+          </li> -->
           <li>
-            <a href="#" class="dropdown-toggle"
-              >Web Development
+            <a href="#" class="dropdown-toggle">
+              Development
               <i class="fas fa-caret-down"></i>
             </a>
 
@@ -57,9 +56,6 @@
                   <li><a href="#">CSS3</a></li>
                   <li><a href="#">Bootstrap</a></li>
                   <li><a href="#">Javascript</a></li>
-                  <li><a href="#">JQuery</a></li>
-                  <li><a href="#">GitHub</a></li>
-                  <li><a href="#">SASS</a></li>
                 </ul>
               </li>
               <li>
@@ -74,6 +70,7 @@
               </li>
             </ul>
           </li>
+          <li><a href="#">About Us</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
         <button class="toggle-button">
@@ -82,7 +79,6 @@
       </nav>
     </div>
     <script>
-      // JavaScript for toggling the menu on small screens
       document.addEventListener("DOMContentLoaded", function () {
         var toggleButton = document.querySelector(".toggle-button");
         var navMenu = document.querySelector("nav ul");
@@ -115,7 +111,7 @@
               dropdownMenu.style.display = "none";
             }
 
-            event.preventDefault(); // Prevent default anchor behavior
+            event.preventDefault();
           });
         });
       });
