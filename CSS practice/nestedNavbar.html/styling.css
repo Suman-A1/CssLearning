@@ -101,9 +101,25 @@ nav ul ul li a i {
 @media only screen and (max-width: 768px) {
   .toggle-button {
     display: block;
+    padding: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+
+    position: fixed;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+  }
+  .flex {
+    height: 85vh;
+    width: 100vw;
   }
   nav ul li {
     display: block;
+    position: relative;
   }
 
   nav ul li ul {
@@ -111,6 +127,11 @@ nav ul ul li a i {
   }
   nav {
     background: none;
+    /* background: black;  */
+  }
+  nav .logo {
+    padding: 0px;
+    margin-left: 10px;
   }
 
   nav ul li ul li ul li {
@@ -118,49 +139,138 @@ nav ul ul li a i {
   }
   nav ul {
     display: none;
+    background: none;
     position: relative;
+
     top: 0;
+
     left: 0;
+
     width: 100%;
 
     /* background: #063247; */
   }
-  /* nav ul ul li {
-    border: 3px solid red;
-  } */
-  nav ul ul ul li a {
-    border: 1px solid black;
-  }
   nav ul ul li a {
-    color: white;
-    position: relative;
+    /* border: 3px solid red; */
+    width: 100vw;
   }
+
+  /* nav ul ul ul li a {
+    border: 1px solid red;
+  } */
+  nav ul ul li a {
+    /* border: 2px solid pink; */
+    /* color: red; */
+
+    /* position: relative; */
+
+    margin-left: 160px;
+    bottom: 45px;
+  }
+
   nav ul ul {
     position: static;
-    opacity: 1;
+
+    /* opacity: 1; */
+
     visibility: visible;
     display: none;
     background: #063247;
+    z-index: 1;
+
+    /* z-index: 0; */
+    /* width: 100vw;  colour setting yaha sy optional tha*/
   }
+
   nav ul ul.open {
     display: block;
   }
-  nav ul {
-    width: 100%;
-  }
+
   .fa-caret-right {
     transform: rotate(90deg); /* Rotate the caret to point downwards */
   }
   nav ul li a {
+    /*veryy important section*/
+
     color: white;
+
     display: block;
     padding: 0 15px;
     line-height: 70px;
     font-size: 20px;
     background: #063247;
     transition: 0.5s;
+
+    position: relative;
+    width: 100vw;
+  }
+
+  nav ul ul ul li a {
+    margin-left: 0px;
+    /* top: -160px; */
   }
   nav ul ul ul li a {
-    margin-left: 30px;
+    /* color: yellow; */
+    /* margin-bottom: -5px; */
+    margin-left: 190px;
+    color: moccasin;
+
+    /* margin-left: 25px;  dropdowns k lie */
   }
+  nav ul ul ul {
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    /* position: absolute; */
+  }
+
+  .dafa-hojaio li a {
+    color: moccasin;
+
+    position: relative;
+    margin-left: 190px;
+
+    /* margin-bottom: -32px; */
+  }
+  /* .fixed {
+    color: mediumseagreen;
+    border: 1px solid paleturquoise;
+  } */
+
+  /* Adjust the position and z-index of Contact Us and About Us */
+  .fixi,
+  .fixi1 {
+    display: grid;
+    position: relative;
+    z-index: 999;
+    /* visibility: visible ; */
+  }
+}
+
+/* Adjust the z-index of the Development dropdown */
+.dropdown-menu {
+  position: absolute;
+  top: 0; /* Position below the parent item */
+  left: 0;
+  width: 100%;
+  background: none;
+  /* background: #063247; */
+  display: none;
+  opacity: 0;
+  z-index: 1000;
+}
+
+/* Ensure the dropdown is visible when open */
+.dropdown-menu.open {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1000;
+  /* position: absolute; */
+}
+
+/* Adjust the position of the dropdown-toggle to accommodate the dropdown */
+.dropdown-toggle.fixed {
+  position: relative;
+  /* z-index: 1000;  */
 }
