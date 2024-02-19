@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Application form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,300;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <form action="formpage2.html" onsubmit="return validateForm()"   >
+      
+        <h1>College Application Form</h1>
+        <div class="part-1">
+          <div class="fname">
+            <h4 class="h5">Name</h4>
+            <input type="text" id="fname" name="fname" /> <br />
+            <br />
+            <label for="fname">First name</label>
+            <p class="first name error"></p>
+          </div>
+          <div class="lname">
+            <input type="text" id="lname" name="lname"  />
+            <br />
+            <br />
+
+            <label for="lname">Last name</label>
+            <p class="last name error"></p>
+          </div>
+        </div>
+        <div class="part-2">
+          <div class="Age">
+            <h4><label for="age"> Your Age</label></h4>
+
+            <input type="number" id="age" name="age"  />
+          </div>
+          <div class="gender">
+            <h4><label for="gender">Gender</label></h4>
+            <select name="gender" id="gender " >
+              <option value="" selected disabled hidden>Please Select</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="part-3">
+          <div class="mobile-number">
+            <h4><label for="phone"> Phone Number</label></h4>
+
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+             
+              placeholder="XXXX-XXXXXXX"
+             
+        
+            
+            />
+            <br />
+            <label for="phone">Enter a valid phone number</label>
+           
+          </div>
+
+          <div class="date-of-birth">
+            <h4><label for="date">Date of Birth</label></h4>
+            <input type="date" id="date" name="date"  />
+          </div>
+        </div>
+        <div class="part-2">
+          <div class="email">
+            <h4><label for="email">Email</label></h4>
+
+            <input type="email" id="email" name="email" /> <br />
+            <label class="">example@example.com</label>
+          </div>
+          <div class="password">
+            <h4><label for="password">Password</label></h4>
+            <input type="password" id="password" name="password" />  <br />
+            <input type="checkbox" onclick="myFunction()">Show Password
+          </div>
+        </div>
+        <!-- Address portion start -->
+        <div class="address-section">
+        <h4 class="">Address</h4>
+              <div class="address">
+                <input type="text" id="address" name="address" />  <br> <br>
+                <label for="address">Street Address</label>
+              </div>
+             
+           
+        </div>
+        <!-- Application for admission form -->
+        <div class="application">
+          <h1>Application for Admission Information</h1>
+          <h4>Education</h4>
+          <div class="education" >
+          <div>
+            <input type="radio" id="BSCS" name="education" value="BSCS"   />
+            <label for="BSCS">Bachelor of Computer Science.</label> 
+          </div>
+            
+             
+           <div>
+            <input type="radio" id="BSIT" name="education" value="BSIT"  />
+              <label for="BSIT">Bachelor of Information Tech</label>
+           </div>
+           
+              
+           
+          </div>
+          </div>
+          <div>
+            <div class="application-type">
+              <h4>Application Type</h4>
+              <div class="type">
+                <div>
+                  <input type="radio" id="experienced" name="type" value="experienced"  />
+                  <label for="experienced">Experienced</label>
+                </div>
+                <div>
+                  <input type="radio" id="transferee" name="type" value="transferee"  />
+                  <label for="transferee">Transferee</label>
+                </div>
+                <div>
+                  <input type="radio" id="fresher" name="type" value="fresher" />
+                  <label for="fresher">Fresher</label> 
+                </div>
+                </div>
+            </div>
+            <div class="enter-experience">
+              <h4>Your Experience</h4>
+              <div class="experience">
+                <!-- <label for="experience">Experience</label> -->
+              <select name="experience" id="experience" class="border-none"  >
+                <option value="" selected disabled hidden>Please Select</option>
+                <option value="1 Year">Less than One Year</option>
+                <option value="2 Years">More than two years</option>
+                <option value="3 Years">Above three Years</option>
+              </select>
+              </div>
+               </div>
+               <div class="Interest-section">
+                <h4>Your Interest</h4>
+                <!-- <label for="interest" class="third1" >your Interest</label> -->
+              <div class="interest-items">
+                <div>
+                  <input
+                  type="checkbox"
+                  id="Development"
+                  name="Development"
+                  value="Development"
+               
+                />
+                <label for="Development" class="third">Development</label> 
+                </div>
+                 <div>
+                  <input
+                  type="checkbox"
+                  id="Business"
+                  name="Business"
+                  value="Business"
+                />
+                <label for="Business" class="third">Business</label> 
+                 </div>
+
+                 <div>
+                  <input
+                  type="checkbox"
+                  id="Desiging"
+                  name="Desiging"
+                  value="Desiging"
+                />
+                <label for="Desiging" class="third">Graphic Desiging</label>
+                 </div>
+                 <div>
+                  <input
+                  type="checkbox"
+                  id="gaming"
+                  name="gaming"
+                  value="gaming"
+                />
+                <label for="gaming" class="third">Gaming</label>
+                 </div>
+                 </div>
+
+               </div>
+               <div class="Textarea">
+                <h4> your Achievments</h4>
+                <textarea
+                name="message"
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Something about your Achievments..."
+               
+              ></textarea>
+              </div>
+              <div class="btn">
+              
+              <!-- <input type="submit" onclick=" validations()"  id="Next" value="Next"> -->
+              <button   >Next</button>
+            </div>
+             
+           </form>
+
+          </div>
+          <script src="script2.js"></script>
+          <!-- onclick="validatePassword(); -->
+ 
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>

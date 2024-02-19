@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link rel="stylesheet" href="formstyle.css" />
+  </head>
+  <body>
+    <form action="index2.html" id="regForm">
+      <h2>Registration Form</h2>
+      <div class="tab">
+        Name
+        <p>
+          <input
+            type="text"
+            placeholder="First name..."
+            oninput="this.className = ''"
+            name="fname"
+          />
+        </p>
+        <p>
+          <input
+            type="text"
+            placeholder="Last name..."
+            oninput="this.className = ''"
+            name="lname"
+          />
+        </p>
+        Contact Info:
+        <p>
+          <input
+            type="email"
+            placeholder="E-mail..."
+            oninput="this.className = ''"
+            name="email"
+          />
+        </p>
+        <p>
+          <input
+            id="password"
+            type="password"
+            placeholder="Password..."
+            oninput="this.className = ''"
+            name="password"
+          />
+           <p class="show-pass">
+            <input type="checkbox" onclick="togglePasswordVisibility()" />Show
+          Password
+          </p> 
+
+          <!-- <button onclick="togglePasswordVisibility()">Show Password</button> -->
+        </p>
+        <!-- <p>
+          <input
+            type="password"
+            placeholder=" Confirm Password..."
+            oninput="this.className = ''"
+            name="password"
+          />
+        </p> -->
+      </div>
+      <div class="tab">
+        Personal Info:
+        <br />
+        <br />
+
+        <select name="gender" id="gender " oninput="this.className = ''">
+          <option value="" selected disabled hidden>Select your gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <p>
+          <input
+            type="number"
+            placeholder="your age.."
+            oninput="this.className = ''"
+            name="age"
+          />
+        </p>
+        <p>
+          <input
+            type="number"
+            placeholder="Contact number.."
+            oninput="this.className = ''"
+            name="number"
+          />
+        </p>
+        <p>
+          Address:
+          <input
+            type="text"
+            placeholder="Residential Address..."
+            oninput="this.className = ''"
+            name="text"
+          />
+        </p>
+      </div>
+      <div class="tab">
+        Educational Info:
+        <p class="radio-btns">
+          <input type="radio" name="education" oninput="this.className = ''" />
+          <label for="BSCS">Computer Sciences.</label>
+        </p>
+        <p class="radio-btns">
+          <input type="radio" name="education" oninput="this.className = ''" />
+          <label for="BSCS"> Information Technology</label>
+        </p>
+        <p class="radio-btns">
+          <input type="radio" name="education" oninput="this.className = ''" />
+          <label for="BSCS"> Software Engineering.</label>
+        </p>
+        Your Interest:
+        <p class="checkbox">
+          <input id="Bs-int" type="checkbox" name="Business" />
+          <label for="Bs-int">Business Sciences</label>
+        </p>
+        <p class="checkbox">
+          <input id="Wd-int" type="checkbox" name="Development" />
+          <label for="Wd-int">web Development</label>
+        </p>
+        <p class="checkbox">
+          <input type="checkbox" id="gam-int" name="gaming" />
+          <label for="gam-int"> Gaming</label>
+        </p>
+      </div>
+      <div class="tab">
+        Your Achievments:
+        <p>
+          <textarea
+            name="message"
+            id="message"
+            cols="100"
+            rows="10"
+            placeholder="Something about your Achievments..."
+          ></textarea>
+        </p>
+      </div>
+      <div style="overflow: auto">
+        <div style="float: right">
+          <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+            Previous
+          </button>
+          <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        </div>
+      </div>
+      <!-- Circles which indicates the steps of the form: -->
+      <div style="text-align: center; margin-top: 40px">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

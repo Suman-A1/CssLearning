@@ -1,0 +1,228 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #3b2f80;
+}
+.main {
+  background-color: white;
+  margin-top: 70px;
+  text-align: center;
+  width: 60%;
+  padding: 5px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+form h1 {
+  font-weight: 300;
+  text-align: center;
+  padding: 20px 0px;
+}
+.h5 {
+  text-align: start;
+  margin-top: 20px;
+}
+
+/*first -section*/
+.part-1 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.part-1 input {
+  padding: 9px 50px;
+  margin-top: 25px;
+}
+.fname {
+  text-align: left;
+}
+
+.lname {
+  margin-top: 37px;
+  text-align: left;
+}
+.part-1 label {
+  color: grey;
+}
+/*first-section end*/
+/*second-section*/
+.part-2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.part-2 input {
+  padding: 9px 50px;
+  margin-top: 10px;
+}
+.Age {
+  margin-left: 15px;
+  /* margin-right: 10px; */
+}
+.gender select {
+  padding: 8px 72px;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.gender label {
+  margin-left: 20px;
+}
+.gender select option {
+  font-size: 15px;
+}
+.part-2 h4 {
+  text-align: left;
+}
+.gender {
+  margin-right: 20px;
+}
+/*section second end---*/
+/*Third section -start---*/
+.part-3 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.part-3 input {
+  padding: 9px 50px;
+  margin-top: 10px;
+}
+.part-3 h4 {
+  text-align: left;
+}
+.mobile-number {
+  margin-left: 30px;
+}
+.mobile-number label {
+  padding-right: 70px;
+  display: block;
+  margin-top: 5px;
+}
+.date-of-birth {
+  margin-right: 75px;
+  margin-top: 4px;
+}
+/* .date-of-birth input {
+   padding: 8px 53px; 
+} */
+.email label {
+  padding-right: 70px;
+  display: block;
+  margin-top: 5px;
+}
+.password {
+  margin-top: 4px;
+}
+/*Address section start----*/
+
+.address-section {
+  margin-top: 30px;
+}
+.address-section h4 {
+  text-align: left;
+  margin-left: 95px;
+}
+.address-section input {
+  padding: 20px 200px;
+  margin-top: 20px;
+
+  text-align: start;
+}
+.address label {
+  color: gray;
+
+  padding: 0px;
+  margin-right: 400px;
+}
+
+/*application -section start*/
+.education {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.education label {
+  font-size: 19px;
+}
+.application h4 {
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+/*Type*/
+.application-type {
+  margin-top: 30px;
+}
+.application-type h4 {
+  text-align: left;
+  margin-left: 100px;
+}
+.type {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.enter-experience {
+  margin-top: 30px;
+  text-align: left;
+  margin-left: 100px;
+}
+.experience {
+  margin-top: 20px;
+}
+.experience select {
+  font-size: 18px;
+  padding: 7px 30px;
+}
+.Interest-section {
+  margin-top: 30px;
+  text-align: left;
+  margin-left: 100px;
+}
+.interest-items {
+  margin-top: 20px;
+  /* font-size: 18px; */
+}
+.third {
+  padding: 5px;
+  font-size: 20px;
+}
+.Textarea {
+  margin-top: 30px;
+  text-align: left;
+  margin-left: 100px;
+}
+.Textarea textarea {
+  margin-top: 20px;
+}
+#Next {
+  margin-top: 40px;
+  background-color: #0075e3;
+  color: white;
+  font-size: 25px;
+  padding: 5px 25px;
+  text-align: right;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button {
+  margin-top: 40px;
+  background-color: #0075e3;
+  color: white;
+  font-size: 25px;
+  padding: 5px 25px;
+  text-align: right;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn {
+  text-align: end;
+  margin-right: 100px;
+}
