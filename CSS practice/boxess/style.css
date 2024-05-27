@@ -1,0 +1,19 @@
+#main {
+  height: 500px;
+  width: 500px;
+  background-color: aquamarine;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  position: relative;
+}
+#main2 {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
